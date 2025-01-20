@@ -1,5 +1,5 @@
 module "local_module" {
-  source = "../../../../../../../platform/src/stacks/accountStack"
+  source = "../search"
 #  source = "comment/local_module"
   aws_profile = ""
   pgadmin_password = ""
