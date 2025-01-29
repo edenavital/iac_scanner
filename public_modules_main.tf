@@ -12,3 +12,7 @@ module "remote_module" {
   source = "terraform-aws-modules/s3-bucket/aws"
   version = "~> 2.1.0"
 }
+
+output "my_arn_id" {
+  value = module.remote_module.s3_bucket_arn
+}
